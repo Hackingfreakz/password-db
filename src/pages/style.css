@@ -1,0 +1,25 @@
+.nav {
+    margin: 0 0 10px 10px;
+    max-width: 120px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+#listitems{
+    list-style: none;
+    margin: 0 1rem;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: #bada55;
+    }
+  }
+}
