@@ -14,7 +14,7 @@ const CharacterPage = () => {
         const response = await fetch(`http://localhost:5000/api/series/${seriesName}`);
         const data = await response.json();
 
-        if (data)setCharacters(data);
+        if (data) setCharacters(data);
         else console.error("Invalid data format:", data);
       } catch (error) {
         console.error("Error fetching characters:", error);
@@ -36,7 +36,6 @@ const CharacterPage = () => {
   }
   return (
     <div>
-      <h1>Characters in {seriesName}</h1>
       <div className="container">
         <div className="row">
           {characters.map((item) => (
